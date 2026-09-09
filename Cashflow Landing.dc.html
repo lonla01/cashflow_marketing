@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="_ds/modernist-a873db62-2b42-466e-9007-82e5324348c9/styles.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;800;900&display=swap">
+<script src="_ds/modernist-a873db62-2b42-466e-9007-82e5324348c9/_ds_bundle.js"></script>
+<style>
+  body { margin: 0; background: var(--color-bg); color: var(--color-text); font-family: var(--font-body); }
+  a { color: var(--color-accent-700); text-decoration: none; }
+  a:hover { color: var(--color-accent); text-decoration: underline; }
+  summary::-webkit-details-marker { display: none; }
+  summary { list-style: none; }
+</style>
+</helmet>
+
+<div style="max-width: 1180px; margin: 0 auto; padding: 0 20px 0 20px;">
+
+  <header class="nav" style="display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 14px 0; border-bottom: 2px solid var(--color-divider); flex-wrap: wrap;">
+    <div class="nav-brand" style="display: flex; align-items: baseline; gap: 8px; font-family: var(--font-heading); font-weight: 900; font-size: 22px; letter-spacing: -0.02em;">
+      Cashflow
+      <span style="font-family: var(--font-body); font-weight: 500; font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--color-accent);">Orange Money · MTN MoMo</span>
+    </div>
+    <nav style="display: flex; align-items: center; gap: 20px; font-size: 13px; flex-wrap: wrap;">
+      <a href="#fonctionnement" style="color: var(--color-text);">Fonctionnement</a>
+      <a href="#rapport" style="color: var(--color-text);">Rapport mensuel</a>
+      <a href="#prix" style="color: var(--color-text);">Prix</a>
+      <a href="#faq" style="color: var(--color-text);">FAQ</a>
+      <a class="btn btn-primary" href="#inscription" style="text-decoration: none;">Essai gratuit 30 jours</a>
+    </nav>
+  </header>
+
+  <section style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px; align-items: start; padding: 56px 0 48px 0; border-bottom: 2px solid var(--color-divider);">
+    <div style="min-width: 0;">
+      <div style="font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--color-accent); margin-bottom: 20px;">Phase 1 livrée · Android</div>
+      <h1 style="margin: 0; font-size: clamp(38px, 6vw, 68px); line-height: 0.98; letter-spacing: -0.03em; text-wrap: balance;">Vos SMS de transaction deviennent un livre de comptes.</h1>
+      <p style="margin: 24px 0 0 0; font-size: 18px; line-height: 1.5; max-width: 46ch; text-wrap: pretty;">Cashflow lit les SMS Orange Money et MTN Mobile Money déjà présents sur votre téléphone, classe chaque opération par catégorie et vous montre, chiffre par chiffre, où part votre argent chaque mois.</p>
+      <div style="display: flex; flex-wrap: wrap; gap: 12px; margin-top: 32px;">
+        <a class="btn btn-primary" href="#inscription" style="min-height: 48px; padding: 0 22px; font-size: 15px;">Rejoindre la bêta — 30 jours gratuits</a>
+        <a class="btn btn-secondary" href="#demo" style="min-height: 48px; padding: 0 22px; font-size: 15px;">Demander une démo</a>
+      </div>
+      <p style="margin: 16px 0 0 0; font-size: 13px; color: var(--color-neutral-700);">Sans carte bancaire. Aucune saisie manuelle. Vos SMS ne quittent pas le téléphone.</p>
+    </div>
+    <div style="display: flex; justify-content: flex-start; min-width: 0;">
+      <figure style="margin: 0; max-width: 300px;">
+        <div style="border: 2px solid var(--color-text); background: var(--color-text); padding: 8px;">
+          <img src="assets/app-transactions.jpg" alt="Écran Transactions de Cashflow : opérations Orange Money et MTN classées par catégorie" style="display: block; width: 100%; height: auto;">
+        </div>
+        <figcaption style="margin-top: 10px; font-size: 12px; color: var(--color-neutral-700);">Écran réel de l'application, version Phase 1.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section style="display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); border-bottom: 2px solid var(--color-divider);">
+    <div style="padding: 28px 24px 28px 0; border-right: 2px solid var(--color-divider);">
+      <div style="font-family: var(--font-heading); font-weight: 900; font-size: 40px; line-height: 1; letter-spacing: -0.03em;">0</div>
+      <div style="margin-top: 8px; font-size: 13px; line-height: 1.4;">saisie manuelle. Tout part des SMS.</div>
+    </div>
+    <div style="padding: 28px 24px; border-right: 2px solid var(--color-divider);">
+      <div style="font-family: var(--font-heading); font-weight: 900; font-size: 40px; line-height: 1; letter-spacing: -0.03em;">2</div>
+      <div style="margin-top: 8px; font-size: 13px; line-height: 1.4;">opérateurs lus : Orange Money et MTN MoMo.</div>
+    </div>
+    <div style="padding: 28px 24px; border-right: 2px solid var(--color-divider);">
+      <div style="font-family: var(--font-heading); font-weight: 900; font-size: 40px; line-height: 1; letter-spacing: -0.03em;">1</div>
+      <div style="margin-top: 8px; font-size: 13px; line-height: 1.4;">rapport mensuel par catégorie, généré tout seul.</div>
+    </div>
+    <div style="padding: 28px 0 28px 24px;">
+      <div style="font-family: var(--font-heading); font-weight: 900; font-size: 40px; line-height: 1; letter-spacing: -0.03em;">8</div>
+      <div style="margin-top: 8px; font-size: 13px; line-height: 1.4;">marchés visés en Afrique francophone.</div>
+    </div>
+  </section>
+
+  <section style="padding: 56px 0; border-bottom: 2px solid var(--color-divider);">
+    <h2 style="margin: 0 0 8px 0; font-size: clamp(28px, 3.6vw, 40px); line-height: 1.05; letter-spacing: -0.02em;">L'argent passe par le mobile. Les comptes, nulle part.</h2>
+    <p style="margin: 0 0 36px 0; font-size: 16px; max-width: 60ch; color: var(--color-neutral-800);">Chaque retrait, chaque transfert, chaque achat de crédit laisse un SMS. Des centaines de SMS par an, que personne ne relit.</p>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 2px; background: var(--color-divider);">
+      <div style="background: var(--color-bg); padding: 24px 24px 24px 0;">
+        <h3 style="margin: 0 0 10px 0; font-size: 18px;">Le solde baisse sans explication</h3>
+        <p style="margin: 0; font-size: 14px; line-height: 1.55; color: var(--color-neutral-800);">Vous voyez ce qu'il reste, jamais ce qui est parti. Impossible de dire ce qu'a coûté le transport ce mois-ci.</p>
+      </div>
+      <div style="background: var(--color-bg); padding: 24px;">
+        <h3 style="margin: 0 0 10px 0; font-size: 18px;">Les frais s'accumulent en silence</h3>
+        <p style="margin: 0; font-size: 14px; line-height: 1.55; color: var(--color-neutral-800);">Frais de retrait, frais de transfert, recharges de 300 FCFA : de petits montants qui pèsent lourd sur le mois.</p>
+      </div>
+      <div style="background: var(--color-bg); padding: 24px 0 24px 24px;">
+        <h3 style="margin: 0 0 10px 0; font-size: 18px;">Le cahier ne suit pas</h3>
+        <p style="margin: 0; font-size: 14px; line-height: 1.55; color: var(--color-neutral-800);">Tenir un carnet ou un tableur demande une discipline quotidienne. On tient trois semaines, puis on abandonne.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="fonctionnement" style="padding: 56px 0; border-bottom: 2px solid var(--color-divider);">
+    <div style="font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--color-accent); margin-bottom: 16px;">Fonctionnement</div>
+    <h2 style="margin: 0 0 40px 0; font-size: clamp(28px, 3.6vw, 40px); line-height: 1.05; letter-spacing: -0.02em;">Trois étapes, une seule fois.</h2>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 32px;">
+      <div style="border-top: 2px solid var(--color-text); padding-top: 16px;">
+        <div style="font-family: var(--font-heading); font-weight: 900; font-size: 14px; letter-spacing: 0.1em; color: var(--color-accent); margin-bottom: 12px;">01</div>
+        <h3 style="margin: 0 0 10px 0; font-size: 20px;">L'app lit vos SMS d'opérateur</h3>
+        <p style="margin: 0; font-size: 14px; line-height: 1.55; color: var(--color-neutral-800);">Vous autorisez la lecture des SMS une fois. Cashflow repère les messages Orange Money et MTN MoMo, y compris l'historique déjà sur le téléphone.</p>
+      </div>
+      <div style="border-top: 2px solid var(--color-text); padding-top: 16px;">
+        <div style="font-family: var(--font-heading); font-weight: 900; font-size: 14px; letter-spacing: 0.1em; color: var(--color-accent); margin-bottom: 12px;">02</div>
+        <h3 style="margin: 0 0 10px 0; font-size: 20px;">Chaque transaction est classée</h3>
+        <p style="margin: 0; font-size: 14px; line-height: 1.55; color: var(--color-neutral-800);">Montant, date, contact, catégorie : Alimentation, Transport, Télécom/Internet, Transferts personnels. Une catégorie mal devinée se corrige en un geste, et la correction est retenue.</p>
+      </div>
+      <div style="border-top: 2px solid var(--color-text); padding-top: 16px;">
+        <div style="font-family: var(--font-heading); font-weight: 900; font-size: 14px; letter-spacing: 0.1em; color: var(--color-accent); margin-bottom: 12px;">03</div>
+        <h3 style="margin: 0 0 10px 0; font-size: 20px;">Le rapport du mois arrive seul</h3>
+        <p style="margin: 0; font-size: 14px; line-height: 1.55; color: var(--color-neutral-800);">Total dépensé, répartition par catégorie, comparaison avec le mois précédent. Rien à remplir : le rapport existe parce que les SMS existent.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="rapport" style="padding: 56px 0; border-bottom: 2px solid var(--color-divider);">
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px; align-items: start;">
+      <div style="min-width: 0;">
+        <div style="font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--color-accent); margin-bottom: 16px;">Rapport mensuel</div>
+        <h2 style="margin: 0 0 20px 0; font-size: clamp(28px, 3.6vw, 40px); line-height: 1.05; letter-spacing: -0.02em;">« Où part mon argent ? » — une réponse chiffrée, chaque mois.</h2>
+        <p style="margin: 0 0 20px 0; font-size: 16px; line-height: 1.55; color: var(--color-neutral-800); max-width: 48ch;">Le rapport additionne toutes les sorties du mois par catégorie et met en évidence les postes qui progressent. C'est là que la plupart des utilisateurs découvrent le vrai coût de leurs frais et de leurs recharges.</p>
+        <ul style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 10px; font-size: 14px;">
+          <li style="border-top: 1px solid var(--color-divider); padding-top: 10px;">Total des dépenses et nombre d'opérations</li>
+          <li style="border-top: 1px solid var(--color-divider); padding-top: 10px;">Part de chaque catégorie, en FCFA et en pourcentage</li>
+          <li style="border-top: 1px solid var(--color-divider); padding-top: 10px;">Écart avec le mois précédent, poste par poste</li>
+          <li style="border-top: 1px solid var(--color-divider); padding-top: 10px;">Recherche par contact ou par marchand</li>
+        </ul>
+      </div>
+      <div style="min-width: 0;">
+        <div style="display: flex; align-items: baseline; justify-content: space-between; gap: 12px; border-bottom: 2px solid var(--color-text); padding-bottom: 10px;">
+          <span style="font-family: var(--font-heading); font-weight: 900; font-size: 16px;">Août 2026</span>
+          <span class="tag tag-outline">Exemple</span>
+        </div>
+        <table class="table" style="width: 100%; border-collapse: collapse; font-size: 14px;">
+          <tbody>
+            <tr><td style="padding: 12px 0; border-bottom: 1px solid var(--color-divider);">Transferts personnels</td><td style="padding: 12px 0; border-bottom: 1px solid var(--color-divider); text-align: right; font-variant-numeric: tabular-nums;">60 500 FCFA</td><td style="padding: 12px 0 12px 16px; border-bottom: 1px solid var(--color-divider); text-align: right; color: var(--color-neutral-700);">48 %</td></tr>
+            <tr><td style="padding: 12px 0; border-bottom: 1px solid var(--color-divider);">Alimentation</td><td style="padding: 12px 0; border-bottom: 1px solid var(--color-divider); text-align: right; font-variant-numeric: tabular-nums;">31 200 FCFA</td><td style="padding: 12px 0 12px 16px; border-bottom: 1px solid var(--color-divider); text-align: right; color: var(--color-neutral-700);">25 %</td></tr>
+            <tr><td style="padding: 12px 0; border-bottom: 1px solid var(--color-divider);">Transport</td><td style="padding: 12px 0; border-bottom: 1px solid var(--color-divider); text-align: right; font-variant-numeric: tabular-nums;">14 000 FCFA</td><td style="padding: 12px 0 12px 16px; border-bottom: 1px solid var(--color-divider); text-align: right; color: var(--color-neutral-700);">11 %</td></tr>
+            <tr><td style="padding: 12px 0; border-bottom: 1px solid var(--color-divider);">Télécom / Internet</td><td style="padding: 12px 0; border-bottom: 1px solid var(--color-divider); text-align: right; font-variant-numeric: tabular-nums;">9 400 FCFA</td><td style="padding: 12px 0 12px 16px; border-bottom: 1px solid var(--color-divider); text-align: right; color: var(--color-neutral-700);">7 %</td></tr>
+            <tr><td style="padding: 12px 0; border-bottom: 1px solid var(--color-divider);">Frais de retrait et de transfert</td><td style="padding: 12px 0; border-bottom: 1px solid var(--color-divider); text-align: right; font-variant-numeric: tabular-nums; color: var(--color-accent-700); font-weight: 600;">7 350 FCFA</td><td style="padding: 12px 0 12px 16px; border-bottom: 1px solid var(--color-divider); text-align: right; color: var(--color-neutral-700);">6 %</td></tr>
+            <tr><td style="padding: 12px 0; border-bottom: 1px solid var(--color-divider);">Factures</td><td style="padding: 12px 0; border-bottom: 1px solid var(--color-divider); text-align: right; font-variant-numeric: tabular-nums;">3 800 FCFA</td><td style="padding: 12px 0 12px 16px; border-bottom: 1px solid var(--color-divider); text-align: right; color: var(--color-neutral-700);">3 %</td></tr>
+            <tr><td style="padding: 14px 0; font-family: var(--font-heading); font-weight: 900;">Total</td><td style="padding: 14px 0; text-align: right; font-family: var(--font-heading); font-weight: 900; font-variant-numeric: tabular-nums;">126 250 FCFA</td><td style="padding: 14px 0 14px 16px;"></td></tr>
+          </tbody>
+        </table>
+        <p style="margin: 12px 0 0 0; font-size: 12px; color: var(--color-neutral-700);">Chiffres d'illustration. Votre rapport est calculé sur vos propres SMS.</p>
+      </div>
+    </div>
+  </section>
+
+  <section style="padding: 56px 0; border-bottom: 2px solid var(--color-divider);">
+    <h2 style="margin: 0 0 40px 0; font-size: clamp(28px, 3.6vw, 40px); line-height: 1.05; letter-spacing: -0.02em;">Ce que fait Cashflow</h2>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px;">
+      <div class="card elev-sm">
+        <div class="card-kicker">Lecture</div>
+        <h3 class="card-title">Deux opérateurs, un seul journal</h3>
+        <p class="card-body">Orange Money et MTN Mobile Money dans une liste unique, triée par date, avec le contact et le montant.</p>
+      </div>
+      <div class="card elev-sm">
+        <div class="card-kicker">Classement</div>
+        <h3 class="card-title">Catégories modifiables</h3>
+        <p class="card-body">Alimentation, Transport, Télécom, Transferts, Factures. Vous corrigez une fois, l'app retient.</p>
+      </div>
+      <div class="card elev-sm">
+        <div class="card-kicker">Recherche</div>
+        <h3 class="card-title">Retrouver un paiement</h3>
+        <p class="card-body">Recherche par contact ou marchand, filtres par catégorie. Utile le jour où il faut prouver un transfert.</p>
+      </div>
+      <div class="card elev-sm">
+        <div class="card-kicker">Rapports</div>
+        <h3 class="card-title">Le mois en une page</h3>
+        <p class="card-body">Total par catégorie, évolution, postes en hausse. Généré automatiquement à chaque fin de mois.</p>
+      </div>
+      <div class="card elev-sm">
+        <div class="card-kicker">Hors ligne</div>
+        <h3 class="card-title">Fonctionne sans données</h3>
+        <p class="card-body">L'analyse se fait sur le téléphone. Pas besoin de connexion pour consulter vos comptes.</p>
+      </div>
+      <div class="card elev-sm">
+        <div class="card-kicker">Confidentialité</div>
+        <h3 class="card-title">Vos SMS restent chez vous</h3>
+        <p class="card-body">Aucun mot de passe Mobile Money demandé, aucun envoi de vos messages vers un serveur.</p>
+      </div>
+    </div>
+  </section>
+
+  <section style="padding: 0; border-bottom: 2px solid var(--color-divider);">
+    <div style="background: var(--color-accent); color: var(--color-bg); padding: 64px 40px; margin: 0 -20px;">
+      <p style="margin: 0; max-width: 22ch; font-family: var(--font-heading); font-weight: 900; font-size: clamp(34px, 5.5vw, 64px); line-height: 1; letter-spacing: -0.03em;">Vous savez ce que vous gagnez. Cashflow vous dit où ça part.</p>
+      <a class="btn" href="#inscription" style="margin-top: 32px; background: var(--color-bg); color: var(--color-text); border: 0; min-height: 48px; padding: 0 22px; font-size: 15px;">Commencer les 30 jours gratuits</a>
+    </div>
+  </section>
+
+  <sc-if value="{{ showRoadmap }}" hint-placeholder-val="{{ true }}">
+    <section style="padding: 56px 0; border-bottom: 2px solid var(--color-divider);">
+      <div style="font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--color-accent); margin-bottom: 16px;">Feuille de route</div>
+      <h2 style="margin: 0 0 40px 0; font-size: clamp(28px, 3.6vw, 40px); line-height: 1.05; letter-spacing: -0.02em;">Trois phases, huit marchés.</h2>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 2px; background: var(--color-divider);">
+        <div style="background: var(--color-bg); padding: 24px 24px 24px 0;">
+          <span class="tag tag-accent">Livrée</span>
+          <h3 style="margin: 14px 0 10px 0; font-size: 18px;">Phase 1 — Lecture et classement</h3>
+          <p style="margin: 0; font-size: 14px; line-height: 1.55; color: var(--color-neutral-800);">Journal des transactions Orange Money et MTN, catégories corrigeables, recherche, rapport mensuel.</p>
+        </div>
+        <div style="background: var(--color-bg); padding: 24px;">
+          <span class="tag tag-outline">En cours</span>
+          <h3 style="margin: 14px 0 10px 0; font-size: 18px;">Phase 2 — Budgets et alertes</h3>
+          <p style="margin: 0; font-size: 14px; line-height: 1.55; color: var(--color-neutral-800);">Plafond par catégorie, alerte quand un poste dérape, export du rapport à partager.</p>
+        </div>
+        <div style="background: var(--color-bg); padding: 24px 0 24px 24px;">
+          <span class="tag tag-outline">À venir</span>
+          <h3 style="margin: 14px 0 10px 0; font-size: 18px;">Phase 3 — Commerçants et déploiement</h3>
+          <p style="margin: 0; font-size: 14px; line-height: 1.55; color: var(--color-neutral-800);">Plusieurs numéros, comptes multi-utilisateurs pour les petites entreprises, puis version anglophone.</p>
+        </div>
+      </div>
+      <p style="margin: 28px 0 0 0; font-size: 14px; color: var(--color-neutral-800);">Marchés visés : Cameroun, Côte d'Ivoire, Sénégal, Mali, Burkina Faso, Guinée, RDC, Madagascar.</p>
+    </section>
+  </sc-if>
+
+  <section id="prix" style="padding: 56px 0; border-bottom: 2px solid var(--color-divider);">
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 32px; align-items: start;">
+      <div style="min-width: 0;">
+        <div style="font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--color-accent); margin-bottom: 16px;">Prix</div>
+        <h2 style="margin: 0 0 16px 0; font-size: clamp(28px, 3.6vw, 40px); line-height: 1.05; letter-spacing: -0.02em;">30 jours gratuits, tout compris.</h2>
+        <p style="margin: 0; font-size: 16px; line-height: 1.55; color: var(--color-neutral-800); max-width: 44ch;">Un mois complet suffit : à la fin, vous avez votre premier rapport et vous voyez exactement ce que l'app vous a appris. Aucune carte bancaire à l'inscription, aucune reconduction automatique.</p>
+      </div>
+      <div style="border: 2px solid var(--color-text); padding: 28px; min-width: 0;">
+        <div style="font-family: var(--font-heading); font-weight: 900; font-size: 44px; line-height: 1; letter-spacing: -0.03em;">30 jours</div>
+        <div style="margin-top: 8px; font-size: 14px; color: var(--color-neutral-800);">d'essai gratuit, sans engagement</div>
+        <ul style="margin: 24px 0 0 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 10px; font-size: 14px;">
+          <li style="border-top: 1px solid var(--color-divider); padding-top: 10px;">Toutes les fonctions de la Phase 1</li>
+          <li style="border-top: 1px solid var(--color-divider); padding-top: 10px;">Historique de SMS analysé sans limite</li>
+          <li style="border-top: 1px solid var(--color-divider); padding-top: 10px;">Rapport mensuel inclus</li>
+          <li style="border-top: 1px solid var(--color-divider); padding-top: 10px;">Support par WhatsApp</li>
+        </ul>
+        <a class="btn btn-primary btn-block" href="#inscription" style="min-height: 48px; padding: 0 18px; font-size: 15px; margin-top: 24px;">Créer mon compte d'essai</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="inscription" style="padding: 56px 0; border-bottom: 2px solid var(--color-divider);">
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px; align-items: start;">
+      <div style="min-width: 0;">
+        <div style="font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--color-accent); margin-bottom: 16px;">Inscription</div>
+        <h2 style="margin: 0 0 16px 0; font-size: clamp(28px, 3.6vw, 40px); line-height: 1.05; letter-spacing: -0.02em;">Prenez votre place dans la bêta.</h2>
+        <p style="margin: 0 0 20px 0; font-size: 16px; line-height: 1.55; color: var(--color-neutral-800); max-width: 44ch;">Laissez un e-mail ou un numéro WhatsApp : vous recevez le lien d'installation et vos 30 jours démarrent à l'ouverture de l'app.</p>
+        <p id="demo" style="margin: 0; font-size: 14px; line-height: 1.55; color: var(--color-neutral-800); max-width: 44ch;">PME, boutique, association : choisissez « Démo entreprise » et nous vous montrons la lecture multi-numéros prévue en Phase 3.</p>
+      </div>
+      <div style="border: 2px solid var(--color-text); padding: 28px; min-width: 0;">
+        <sc-if value="{{ sent }}" hint-placeholder-val="{{ false }}">
+          <div>
+            <div style="font-family: var(--font-heading); font-weight: 900; font-size: 24px; line-height: 1.1; letter-spacing: -0.02em;">C'est noté. Merci.</div>
+            <p style="margin: 14px 0 0 0; font-size: 14px; line-height: 1.55; color: var(--color-neutral-800);">Nous revenons vers vous avec le lien d'installation et la marche à suivre.</p>
+          </div>
+        </sc-if>
+        <sc-if value="{{ notSent }}" hint-placeholder-val="{{ true }}">
+          <form onSubmit="{{ onSubmit }}" style="display: flex; flex-direction: column; gap: 18px;">
+            <div class="field">
+              <label for="cf-contact">E-mail ou numéro WhatsApp</label>
+              <input id="cf-contact" class="input" type="text" required="required" placeholder="vous@exemple.com ou +237 6XX XX XX XX" style="min-height: 44px;">
+            </div>
+            <div class="field">
+              <label for="cf-pays">Pays</label>
+              <select id="cf-pays" class="input" style="min-height: 44px;">
+                <option>Cameroun</option>
+                <option>Côte d'Ivoire</option>
+                <option>Sénégal</option>
+                <option>Mali</option>
+                <option>Burkina Faso</option>
+                <option>Guinée</option>
+                <option>RDC</option>
+                <option>Madagascar</option>
+                <option>Autre</option>
+              </select>
+            </div>
+            <div class="field">
+              <label>Je veux</label>
+              <div style="display: flex; flex-direction: column; gap: 10px; margin-top: 6px;">
+                <label class="radio"><input type="radio" name="cf-type" value="beta" defaultChecked="{{ true }}"><span class="dot"></span>l'essai gratuit 30 jours</label>
+                <label class="radio"><input type="radio" name="cf-type" value="demo"><span class="dot"></span>une démo entreprise</label>
+              </div>
+            </div>
+            <button class="btn btn-primary btn-block" type="submit" style="min-height: 48px; padding: 0 18px; font-size: 15px;">Envoyer ma demande</button>
+            <p style="margin: 0; font-size: 12px; color: var(--color-neutral-700);">Nous n'utilisons ce contact que pour l'accès à la bêta.</p>
+          </form>
+        </sc-if>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq" style="padding: 56px 0; border-bottom: 2px solid var(--color-divider);">
+    <h2 style="margin: 0 0 32px 0; font-size: clamp(28px, 3.6vw, 40px); line-height: 1.05; letter-spacing: -0.02em;">Questions fréquentes</h2>
+    <div style="display: flex; flex-direction: column;">
+      <details style="border-top: 2px solid var(--color-divider); padding: 18px 0;">
+        <summary style="cursor: pointer; font-family: var(--font-heading); font-weight: 800; font-size: 17px;">Faut-il donner mon code secret Mobile Money ?</summary>
+        <p style="margin: 12px 0 0 0; font-size: 14px; line-height: 1.6; color: var(--color-neutral-800); max-width: 70ch;">Non. Cashflow ne se connecte pas à votre compte Orange Money ou MTN. Il lit uniquement les SMS de confirmation déjà reçus sur le téléphone.</p>
+      </details>
+      <details style="border-top: 2px solid var(--color-divider); padding: 18px 0;">
+        <summary style="cursor: pointer; font-family: var(--font-heading); font-weight: 800; font-size: 17px;">L'app peut-elle envoyer de l'argent ou modifier mon solde ?</summary>
+        <p style="margin: 12px 0 0 0; font-size: 14px; line-height: 1.6; color: var(--color-neutral-800); max-width: 70ch;">Non. Elle est en lecture seule : elle observe, classe et calcule. Aucune opération n'est effectuée en votre nom.</p>
+      </details>
+      <details style="border-top: 2px solid var(--color-divider); padding: 18px 0;">
+        <summary style="cursor: pointer; font-family: var(--font-heading); font-weight: 800; font-size: 17px;">Et si une transaction est mal classée ?</summary>
+        <p style="margin: 12px 0 0 0; font-size: 14px; line-height: 1.6; color: var(--color-neutral-800); max-width: 70ch;">Vous changez la catégorie directement dans la liste. La transaction est marquée « modifié » et la règle s'applique aux opérations suivantes du même contact.</p>
+      </details>
+      <details style="border-top: 2px solid var(--color-divider); padding: 18px 0;">
+        <summary style="cursor: pointer; font-family: var(--font-heading); font-weight: 800; font-size: 17px;">Est-ce que ça marche avec deux numéros ou deux opérateurs ?</summary>
+        <p style="margin: 12px 0 0 0; font-size: 14px; line-height: 1.6; color: var(--color-neutral-800); max-width: 70ch;">Les SMS Orange Money et MTN MoMo reçus sur le téléphone sont lus ensemble. La gestion de plusieurs numéros et de plusieurs utilisateurs est prévue en Phase 3.</p>
+      </details>
+      <details style="border-top: 2px solid var(--color-divider); border-bottom: 2px solid var(--color-divider); padding: 18px 0;">
+        <summary style="cursor: pointer; font-family: var(--font-heading); font-weight: 800; font-size: 17px;">Faut-il de la connexion internet ?</summary>
+        <p style="margin: 12px 0 0 0; font-size: 14px; line-height: 1.6; color: var(--color-neutral-800); max-width: 70ch;">Non pour l'analyse et la consultation : tout se calcule sur l'appareil. La connexion ne sert qu'au téléchargement de l'application et aux mises à jour.</p>
+      </details>
+    </div>
+  </section>
+
+  <footer style="display: flex; flex-wrap: wrap; gap: 24px; justify-content: space-between; align-items: flex-end; padding: 40px 0;">
+    <div>
+      <div style="font-family: var(--font-heading); font-weight: 900; font-size: 20px; letter-spacing: -0.02em;">Cashflow</div>
+      <p style="margin: 8px 0 0 0; font-size: 13px; color: var(--color-neutral-700); max-width: 44ch;">Lecture des SMS Orange Money et MTN Mobile Money. Afrique francophone, version anglophone à suivre.</p>
+    </div>
+    <div style="display: flex; gap: 20px; font-size: 13px;">
+      <a href="#inscription">Essai gratuit</a>
+      <a href="#demo">Démo entreprise</a>
+      <a href="#faq">FAQ</a>
+    </div>
+  </footer>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;showRoadmap&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Contenu&quot;}}">
+class Component extends DCLogic {
+  state = { sent: false };
+  renderVals() {
+    return {
+      showRoadmap: this.props.showRoadmap ?? true,
+      sent: this.state.sent,
+      notSent: !this.state.sent,
+      onSubmit: (e) => { e.preventDefault(); this.setState({ sent: true }); }
+    };
+  }
+}
+</script>
+</body>
+</html>
